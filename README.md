@@ -32,18 +32,20 @@ We provide the statistics of these datasets in the table below:
 | # of distinct properties       	|   1,323 	|    153 	|
 | Size in GBs                    	|     6.6 	|  28.59 	|
 
-You can download a copy of these datasets from our [single archive](http://130.226.98.152/www_datasets/)
+You can download a copy of these datasets from our [single archive](http://130.226.98.152/www_datasets/).
 
 ### Tools and Approaches
 
 #### 1. SheXer
-ABC
+
+[https://github.com/DaniFdezAlvarez/shexer](https://github.com/DaniFdezAlvarez/shexer)
+
 
 #### 2. ShapeDesigner
-ABC
+[https://gitlab.inria.fr/jdusart/shexjapp](https://gitlab.inria.fr/jdusart/shexjapp)
 
 #### 3. SHACLGEN
-ABC
+[https://pypi.org/project/shaclgen/](https://pypi.org/project/shaclgen/)
 
 
 #### Persistent URI & Licence:
