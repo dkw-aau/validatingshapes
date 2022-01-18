@@ -16,7 +16,7 @@ Results show the need for developing methods that can automatically generate sha
 ## Datasets
 We have used DBpedia and YAGO-4 datasets to extract their SHACL shapes. Details on how we downloaded are given below:
 
-1. **DBPedia:** We used  [dbpedia script](https://github.com/Kashif-Rabbani/shacl/blob/main/scripts/dbpedia/download-dbpedia.sh) to download all the dbpedia files listed [here](https://github.com/Kashif-Rabbani/shacl/blob/main/scripts/dbpedia/dbpedia-files.txt).
+1. **DBPedia:** We used  [dbpedia script](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/dbpedia/download-dbpedia.sh) to download all the dbpedia files listed [here](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/dbpedia/dbpedia-files.txt).
 2. **YAGO-4:** We downloaded YAGO-4 English version from [https://yago-knowledge.org/data/yago4/en/](https://yago-knowledge.org/data/yago4/en/).
 
 We provide a copy of all our datasets in a [single archive](http://130.226.98.152/www_datasets/). 
@@ -39,7 +39,7 @@ ABC
 
 #### Persistent URI & Licence:
 All of the data and results presented in our experimental study are available at
-[https://github.com/Kashif-Rabbani/validatingshapes](https://github.com/Kashif-Rabbani/validatingshapes) under [Apache License 2.0](#) .
+[https://github.com/Kashif-Rabbani/validatingshapes](https://github.com/Kashif-Rabbani/validatingshapes) under [Apache License 2.0](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/LICENSE) .
 
 
 
