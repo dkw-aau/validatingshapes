@@ -8,9 +8,9 @@ Among these, the Shapes Constraint Language (SHACL) and the Shapes Expression La
 In the last few years, the usage of these constraint languages has increased, and hence new needs arose.
 One such need is to enable the efficient generation of these shapes for existing KGs.
 Yet, since these languages are relatively new, we witness a lack of understanding of how they are effectively put to use for existing KGs. 
-Therefore, in this poster, we answer \emph{How validating shapes (SHACL/ShEx) are being generated and adopted?}
+Therefore, in this poster, we answer **How validating shapes (SHACL/ShEx) are being generated and adopted?**
 We conducted a community online survey to analyze the needs of users (both from industry and academia) generating validating shapes.
-Results show the need for developing methods that can automatically generate shapes from large KGs with quality guarantees.
+_Results show the need for developing methods that can automatically generate shapes from large KGs with quality guarantees._
 
 
 ## Datasets
@@ -19,11 +19,20 @@ We have used DBpedia and YAGO-4 datasets to extract their SHACL shapes. Details 
 1. **DBPedia:** We used  [dbpedia script](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/dbpedia/download-dbpedia.sh) to download all the dbpedia files listed [here](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/dbpedia/dbpedia-files.txt).
 2. **YAGO-4:** We downloaded YAGO-4 English version from [https://yago-knowledge.org/data/yago4/en/](https://yago-knowledge.org/data/yago4/en/).
 
-We provide a copy of all our datasets in a [single archive](http://130.226.98.152/www_datasets/). 
+We provide the statistics of these datasets in the table below:
 
-## Datasets Statistics
+|                                	| DBpedia 	| YAGO-4 	|
+|--------------------------------	|--------:	|-------:	|
+| # of triples                   	|    52 M 	|  210 M 	|
+| # of distinct objects          	|    19 M 	|  126 M 	|
+| # of distinct subjects         	|    15 M 	|    5 M 	|
+| # of distinct literals         	|    28 M 	|  111 M 	|
+| # of distinct RDF type triples 	|     5 M 	|   17 M 	|
+| # of distinct classes          	|     427 	|  8,902 	|
+| # of distinct properties       	|   1,323 	|    153 	|
+| Size in GBs                    	|     6.6 	|  28.59 	|
 
-TODO: Add table here.
+You can download a copy of these datasets from our [single archive](http://130.226.98.152/www_datasets/)
 
 ### Tools and Approaches
 
