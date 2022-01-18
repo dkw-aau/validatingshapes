@@ -49,7 +49,7 @@ You can download a copy of these datasets from our [single archive](http://130.2
 
 
 #### Persistent URI & Licence:
-All of the data and results presented in our experimental study are available at
+The content present in this repository is available at
 [https://github.com/Kashif-Rabbani/validatingshapes](https://github.com/Kashif-Rabbani/validatingshapes) under [Apache License 2.0](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/LICENSE) .
 
 
