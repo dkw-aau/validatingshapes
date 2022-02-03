@@ -12,7 +12,7 @@ We have used the following datasets:
 
 1. **DBPedia:** We used  [dbpedia script](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/dbpedia/download-dbpedia.sh) to download all the dbpedia files listed [here](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/dbpedia/dbpedia-files.txt).
 2. **YAGO-4:** We downloaded YAGO-4 English version from [https://yago-knowledge.org/data/yago4/en/](https://yago-knowledge.org/data/yago4/en/).
-2. **LUBM:** We generated LUBM dataset following the guidelines available at [http://swat.cse.lehigh.edu/projects/lubm/](http://swat.cse.lehigh.edu/projects/lubm/).
+2. **LUBM:** We generated LUBM dataset following the guidelines available at [LUBM's official Website](http://swat.cse.lehigh.edu/projects/lubm/).
 
 Statistics of these datasets is shown in the table below:
 
@@ -38,7 +38,7 @@ Additionally, we have also made available an executable Jar file of our applicat
 
 ### How to run the Jar?
 
-- Download the Jar from the Zenodo
+- Download the Jar from the [Zenodo](https://doi.org/10.5281/zenodo.5958986)
 - Update the configuration in [config.properties](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/config.properties) file 
 - Run the jar file by passing the config file as a parameter: `java -jar shacl-generator-program.jar config.properties`
 
