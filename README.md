@@ -3,28 +3,18 @@
 ## A Community Survey on Validating Shapes Generation and Adoption
 
 
-Knowledge Graphs (KGs) are the de-facto standard to represent heterogeneous domain knowledge on the Web and within organizations. 
-Various tools and approaches exist to manage KGs and ensure the quality of their data.
-Among these, the Shapes Constraint Language (SHACL) and the Shapes Expression Language (ShEx) are the two state-of-the-art languages to define validating shapes for KGs.
-In the last few years, the usage of these constraint languages has increased, and hence new needs arose.
-One such need is to enable the efficient generation of these shapes.
-Yet, since these languages are relatively new, we witness a lack of understanding of how they are effectively employed for existing KGs. 
-Therefore, in this work, we answer **How validating shapes are being generated and adopted?**
-Our contribution is threefold.
-First, we conducted a community survey to analyze the needs of users (both from industry and academia) generating validating shapes.
-Then, we cross-referenced our results with an extensive survey of the existing tools and their features.
-Finally, we investigated how existing automatic shape extraction approaches work in practice on real, large KGs.
-**Our analysis shows the need for developing semi-automatic methods that can help users generate shapes from large KGs.**
+Knowledge Graphs (KGs) are the de-facto standard to represent heterogeneous domain knowledge on the Web and within organizations. Various tools and approaches exist to manage KGs and ensure the quality of their data. Among these, the Shapes Constraint Language (SHACL) and the Shapes Expression Language (ShEx) are the two state-of-the-art languages to define validating shapes for KGs. In the last few years, the usage of these constraint languages has increased, and hence new needs arose. One such need is to enable the efficient generation of these shapes. Yet, since these languages are relatively new, we witness a lack of understanding of how they are effectively employed for existing KGs. Therefore, in this work, we answer **How validating shapes are being generated and adopted?** Our contribution is threefold. First, we conducted a community survey to analyze the needs of users (both from industry and academia) generating validating shapes. Then, we cross-referenced our results with an extensive survey of the existing tools and their features. Finally, we investigated how existing automatic shape extraction approaches work in practice on real, large KGs. **Our analysis shows the need for developing semi-automatic methods that can help users generate shapes from large KGs.**
 
 
 
 ## Datasets
-We have used DBpedia and YAGO-4 datasets to extract their SHACL shapes. Details on how we downloaded are given below:
+We have used the following datasets:
 
 1. **DBPedia:** We used  [dbpedia script](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/dbpedia/download-dbpedia.sh) to download all the dbpedia files listed [here](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/dbpedia/dbpedia-files.txt).
 2. **YAGO-4:** We downloaded YAGO-4 English version from [https://yago-knowledge.org/data/yago4/en/](https://yago-knowledge.org/data/yago4/en/).
+2. **LUBM:** We generated LUBM dataset following the guidelines available at [http://swat.cse.lehigh.edu/projects/lubm/](http://swat.cse.lehigh.edu/projects/lubm/).
 
-We provide the statistics of these datasets in the table below:
+Statistics of these datasets is shown in the table below:
 
 |                                	| DBpedia 	| YAGO-4 	| LUBM  	|
 |--------------------------------	|--------:	|-------:	|-------	|
@@ -38,6 +28,19 @@ We provide the statistics of these datasets in the table below:
 | Size in GBs                    	|     6.6 	|  28.59 	| 15.66 	|
 
 You can download a copy of these datasets from our [single archive](http://130.226.98.152/www_datasets/).
+
+
+## SHACL Shapes
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5958986.svg)](https://doi.org/10.5281/zenodo.5958986)
+We have published the extracted SHACL shapes of all three datasets on [Zenodo](https://doi.org/10.5281/zenodo.5958986).
+Additionally, we have also made available an executable Jar file of our application on Zenodo to extract SHACL shapes from RDF datasets in `.nt` format.
+
+### How to run the Jar?
+
+- Download the Jar from the Zenodo
+- Update the configuration in [config.properties](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/config.properties) file 
+- Run the jar file by passing the config file as a parameter: `java -jar shacl-generator-program.jar config.properties`
+
 
 ### Tools and Approaches
 
