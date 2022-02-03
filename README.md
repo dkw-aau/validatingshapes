@@ -32,6 +32,7 @@ You can download a copy of these datasets from our [single archive](http://130.2
 
 ## SHACL Shapes
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5958986.svg)](https://doi.org/10.5281/zenodo.5958986)
+
 We have published the extracted SHACL shapes of all three datasets on [Zenodo](https://doi.org/10.5281/zenodo.5958986).
 Additionally, we have also made available an executable Jar file of our application on Zenodo to extract SHACL shapes from RDF datasets in `.nt` format.
 
@@ -42,7 +43,9 @@ Additionally, we have also made available an executable Jar file of our applicat
 - Run the jar file by passing the config file as a parameter: `java -jar shacl-generator-program.jar config.properties`
 
 
-### Tools and Approaches
+### Analyzing the State-of-the-art tools 
+
+We ran some experiments to find out the real capabilities of the following existing tools for automatically extracting shapes from RDF graphs.
 
 #### 1. SheXer
 [https://github.com/DaniFdezAlvarez/shexer](https://github.com/DaniFdezAlvarez/shexer)
@@ -55,7 +58,7 @@ Additionally, we have also made available an executable Jar file of our applicat
 [https://pypi.org/project/shaclgen/](https://pypi.org/project/shaclgen/)
 
 
-#### Persistent URI & Licence:
+##### Persistent URI & Licence:
 The content present in this repository is available at
 [https://github.com/Kashif-Rabbani/validatingshapes](https://github.com/Kashif-Rabbani/validatingshapes) under [Apache License 2.0](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/LICENSE) .
 
