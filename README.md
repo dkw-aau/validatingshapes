@@ -2,15 +2,20 @@
 
 ## A Community Survey on Validating Shapes Generation and Adoption
 
+
 Knowledge Graphs (KGs) are the de-facto standard to represent heterogeneous domain knowledge on the Web and within organizations. 
 Various tools and approaches exist to manage KGs and ensure the quality of their data.
 Among these, the Shapes Constraint Language (SHACL) and the Shapes Expression Language (ShEx) are the two state-of-the-art languages to define validating shapes for KGs.
 In the last few years, the usage of these constraint languages has increased, and hence new needs arose.
-One such need is to enable the efficient generation of these shapes for existing KGs.
-Yet, since these languages are relatively new, we witness a lack of understanding of how they are effectively put to use for existing KGs. 
-Therefore, in this poster, we answer **How validating shapes (SHACL/ShEx) are being generated and adopted?**
-We conducted a community online survey to analyze the needs of users (both from industry and academia) generating validating shapes.
-_Results show the need for developing methods that can automatically generate shapes from large KGs with quality guarantees._
+One such need is to enable the efficient generation of these shapes.
+Yet, since these languages are relatively new, we witness a lack of understanding of how they are effectively employed for existing KGs. 
+Therefore, in this work, we answer **How validating shapes are being generated and adopted?**
+Our contribution is threefold.
+First, we conducted a community survey to analyze the needs of users (both from industry and academia) generating validating shapes.
+Then, we cross-referenced our results with an extensive survey of the existing tools and their features.
+Finally, we investigated how existing automatic shape extraction approaches work in practice on real, large KGs.
+**Our analysis shows the need for developing semi-automatic methods that can help users generate shapes from large KGs.**
+
 
 
 ## Datasets
@@ -21,23 +26,22 @@ We have used DBpedia and YAGO-4 datasets to extract their SHACL shapes. Details 
 
 We provide the statistics of these datasets in the table below:
 
-|                                	| DBpedia 	| YAGO-4 	|
-|--------------------------------	|--------:	|-------:	|
-| # of triples                   	|    52 M 	|  210 M 	|
-| # of distinct objects          	|    19 M 	|  126 M 	|
-| # of distinct subjects         	|    15 M 	|    5 M 	|
-| # of distinct literals         	|    28 M 	|  111 M 	|
-| # of distinct RDF type triples 	|     5 M 	|   17 M 	|
-| # of distinct classes          	|     427 	|  8,902 	|
-| # of distinct properties       	|   1,323 	|    153 	|
-| Size in GBs                    	|     6.6 	|  28.59 	|
+|                                	| DBpedia 	| YAGO-4 	| LUBM  	|
+|--------------------------------	|--------:	|-------:	|-------	|
+| # of triples                   	|    52 M 	|  210 M 	| 91 M  	|
+| # of distinct objects          	|    19 M 	|  126 M 	| 12 M  	|
+| # of distinct subjects         	|    15 M 	|    5 M 	| 10 M  	|
+| # of distinct literals         	|    28 M 	|  111 M 	| 5.5 M 	|
+| # of distinct RDF type triples 	|     5 M 	|   17 M 	| 1 M   	|
+| # of distinct classes          	|     427 	|  8,902 	| 22    	|
+| # of distinct properties       	|   1,323 	|    153 	| 20    	|
+| Size in GBs                    	|     6.6 	|  28.59 	| 15.66 	|
 
 You can download a copy of these datasets from our [single archive](http://130.226.98.152/www_datasets/).
 
 ### Tools and Approaches
 
 #### 1. SheXer
-
 [https://github.com/DaniFdezAlvarez/shexer](https://github.com/DaniFdezAlvarez/shexer)
 
 
