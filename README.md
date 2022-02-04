@@ -40,6 +40,17 @@ Additionally, we have also made available an executable Jar file of our applicat
 
 - Download the Jar from the [Zenodo](https://doi.org/10.5281/zenodo.5958986)
 - Update the configuration in [config.properties](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/config.properties) file 
+- Follow [these](https://sdkman.io/install) steps to install sdkman and execute the following commands to install the specified version of Java and Gradle.
+
+        sdk list java
+        sdk install java 17.0.2-open 
+        sdk use java java 17.0.2-open 
+        
+        sdk list gradle
+        sdk install gradle Gradle 7.4-rc-1
+        sdk use gradle Gradle 7.4-rc-1
+
+- In case you are using docker, you should use `gradle:7.3.3-jdk17-alpine`.
 - Run the jar file by passing the config file as a parameter: `java -jar shacl-generator-program.jar config.properties`
 
 
