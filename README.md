@@ -10,7 +10,7 @@ Knowledge Graphs (KGs) are the de-facto standard to represent heterogeneous doma
 ## Datasets
 We have used the following datasets:
 
-1. **DBPedia:** We used  [dbpedia script](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/dbpedia/download-dbpedia.sh) to download all the dbpedia files listed [here](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/dbpedia/dbpedia-files.txt).
+1. **DBPedia:** We used  [dbpedia script](https://github.com/dkw-aau/validatingshapes/blob/main/dbpedia/download-dbpedia.sh) to download all the dbpedia files listed [here](https://github.com/dkw-aau/validatingshapes/blob/main/dbpedia/dbpedia-files.txt).
 2. **YAGO-4:** We downloaded YAGO-4 English version from [https://yago-knowledge.org/data/yago4/en/](https://yago-knowledge.org/data/yago4/en/).
 2. **LUBM:** We generated LUBM dataset following the guidelines available at [LUBM's official Website](http://swat.cse.lehigh.edu/projects/lubm/).
 
@@ -39,7 +39,7 @@ Additionally, we have also made available an executable Jar file of our applicat
 ### How to run the Jar?
 
 - Download the Jar from the [Zenodo](https://doi.org/10.5281/zenodo.5958986)
-- Update the configuration in [config.properties](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/config.properties) file 
+- Update the configuration in [config.properties](https://github.com/dkw-aau/validatingshapes/blob/main/config.properties) file 
 - Follow [these](https://sdkman.io/install) steps to install sdkman and execute the following commands to install the specified version of Java and Gradle.
 
         sdk list java
@@ -71,7 +71,7 @@ We ran some experiments to find out the real capabilities of the following exist
 
 ##### Persistent URI & Licence:
 The content present in this repository is available at
-[https://github.com/Kashif-Rabbani/validatingshapes](https://github.com/Kashif-Rabbani/validatingshapes) under [Apache License 2.0](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/LICENSE) .
+[https://github.com/dkw-aau/validatingshapes](https://github.com/dkw-aau/validatingshapes) under [Apache License 2.0](https://github.com/dkw-aau/validatingshapes/blob/main/LICENSE) .
 
 
 
