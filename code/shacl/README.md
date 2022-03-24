@@ -11,8 +11,6 @@ git clone https://github.com/Kashif-Rabbani/validatingshapes.git
 The repository contains all code, and instructions. Dataset should be downloaded separately as explained below.
 
 
-
-
 ## Getting the data
 We have used DBpedia, YAGO-4, and LUBM datasets. Details on how we downloaded are given below:
 
@@ -30,19 +28,20 @@ We provide a copy of all our datasets in a [single archive](http://130.226.98.15
 ```
 ## Software Setup and Experiments (with Docker)
 
-Note: You will have to update the configuration files for each dataset in the [config](https://github.com/Kashif-Rabbani/shacl/tree/main/config) directory, i.e., `yagoConfig.properties`, `dbpediaConfig.properties`, and `dbpediaConfig.properties` to set the correct paths.
+Note: You will have to update the [config](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/code/shacl/config.properties) file for each dataset accordingly.
 
 #### Build Docker 
 
 Go inside the project directory and execute the following command to build the docker
 
 ```
+cd code/shacl/
 docker build . -t shacl:v1
 ```
 
 #### Run the container
-Running the build image as a container to run QSE approach for LUBM dataset using `lubmConfig.properties`. 
-You can use other config files such as `yagoConfig.properties` or `dbpediaConfig.properties` for YAGO-4 and DBpedia datasets.
+Running the build image as a container to run QSE approach for LUBM dataset using `config.properties`. 
+
 ```
 docker run -d --name shacl \
     -m 20GB \
@@ -85,7 +84,6 @@ docker stats
         sdk install java 17.0.2-open 
         sdk use java java 17.0.2-open 
         
-        
 
 2. Install gradle
 
@@ -102,5 +100,5 @@ docker stats
 4. Run the jar file by passing the config file as a parameter: `java -jar shacl.jar config.properties`
 
 
-###Output
-You can inspect the extracted shapes saved in the Output directory. 
+### Extracted Output Shapes
+You can inspect the extracted shapes saved in the Output directory. You will see two files, one in pretty formatting and one in default formatting.  
