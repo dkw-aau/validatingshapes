@@ -6,7 +6,7 @@
 The following instructions are for reproducing the experiments we presented in our paper. To reproduce and extend the experiments you should clone the branch `master` on the Github repository as follows:
 
 ```
-git clone https://github.com/Kashif-Rabbani/validatingshapes.git
+git clone https://github.com/dkw-aau/validatingshapes.git
 ```
 The repository contains all code, and instructions. Dataset should be downloaded separately as explained below.
 
@@ -14,7 +14,7 @@ The repository contains all code, and instructions. Dataset should be downloaded
 ## Getting the data
 We have used the following datasets:
 
-1. **DBPedia:** We used  [dbpedia script](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/dbpedia/download-dbpedia.sh) to download all the dbpedia files listed [here](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/dbpedia/dbpedia-files.txt).
+1. **DBPedia:** We used  [dbpedia script](https://github.com/dkw-aau/validatingshapes/blob/main/dbpedia/download-dbpedia.sh) to download all the dbpedia files listed [here](https://github.com/dkw-aau/validatingshapes/blob/main/dbpedia/dbpedia-files.txt).
 2. **YAGO-4:** We downloaded YAGO-4 English version from [https://yago-knowledge.org/data/yago4/en/](https://yago-knowledge.org/data/yago4/en/).
 2. **LUBM:** We generated LUBM dataset following the guidelines available at [LUBM's official Website](http://swat.cse.lehigh.edu/projects/lubm/).
 
@@ -28,7 +28,7 @@ We provide a copy of all our datasets in a [single archive](http://130.226.98.15
 ```
 ## Software Setup and Experiments (with Docker)
 
-Note: You will have to update the [config](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/code/shacl/config.properties) file for each dataset accordingly.
+Note: You will have to update the [config](https://github.com/dkw-aau/validatingshapes/blob/main/code/shacl/config.properties) file for each dataset accordingly.
 
 #### Build Docker 
 
