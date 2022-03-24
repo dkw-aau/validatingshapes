@@ -12,11 +12,11 @@ The repository contains all code, and instructions. Dataset should be downloaded
 
 
 ## Getting the data
-We have used DBpedia, YAGO-4, and LUBM datasets. Details on how we downloaded are given below:
+We have used the following datasets:
 
-1. **DBPedia:** We used  [dbpedia script](https://github.com/Kashif-Rabbani/shacl/blob/main/scripts/dbpedia/download-dbpedia.sh) to download all the dbpedia files listed [here](https://github.com/Kashif-Rabbani/shacl/blob/main/scripts/dbpedia/dbpedia-files.txt).
+1. **DBPedia:** We used  [dbpedia script](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/dbpedia/download-dbpedia.sh) to download all the dbpedia files listed [here](https://github.com/Kashif-Rabbani/validatingshapes/blob/main/dbpedia/dbpedia-files.txt).
 2. **YAGO-4:** We downloaded YAGO-4 English version from [https://yago-knowledge.org/data/yago4/en/](https://yago-knowledge.org/data/yago4/en/).
-3. **LUBM:** We used [LUBM-Generator](https://github.com/rvesse/lubm-uba) to generate LUBM-500.
+2. **LUBM:** We generated LUBM dataset following the guidelines available at [LUBM's official Website](http://swat.cse.lehigh.edu/projects/lubm/).
 
 
 We provide a copy of all our datasets in a [single archive](http://130.226.98.152/www_datasets/). You can download these datasets in `data` folder, and check the size and number of lines (triples) with the following commands:
